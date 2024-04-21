@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Citizen Registry REST Service</title>
+</head>
+<body>
+<h1>Welcome to the Citizen Registry REST Service</h1>
+<p>It offers methods to read list of citizens info as well as search, add, remove and update entries</p>
+<p>Only for Registry's users with admin privileges</p>
+<hr/>
+<a href="api/books">GET ALL CITIZEN's</a>
+<hr/>
+<form id="form1">
+<label>Citizen ID</label>
+<input id="idnumber" name="idnumber" type="text"/>
+<button type="submit" onclick="window.open(window.location.href + 'api/books/' + document.getElementById('isbn').value)">Citizen Details</button>
+<button type="reset">Reset</button>
+</form>
+</body>
+</html>
